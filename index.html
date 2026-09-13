@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Всем привет меня зовут Виктор Сергеевич — Творческий портрет</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 40px auto;
+            max-width: 800px;
+            padding: 40px 20px;
+            color: #333; /* Основной текст */
+            
+            /* Эстетичный музыкальный фон в виде виниловых пластинок */
+            background-color: #f7f5fa;
+            background-image: 
+                radial-gradient(circle, transparent 40%, #e6e1f0 41%, #e6e1f0 44%, transparent 45%),
+                radial-gradient(circle, transparent 20%, #e6e1f0 21%, #e6e1f0 23%, transparent 24%),
+                radial-gradient(circle, #333 4px, transparent 5px),
+                radial-gradient(circle, transparent 40%, #e6e1f0 41%, #e6e1f0 44%, transparent 45%),
+                radial-gradient(circle, transparent 20%, #e6e1f0 21%, #e6e1f0 23%, transparent 24%),
+                radial-gradient(circle, #333 4px, transparent 5px);
+            background-size: 160px 160px;
+            background-position: 0 0, 0 0, 40px 40px, 80px 80px, 80px 80px, 120px 120px;
+        }
+        
+        /* Белая подложка с размытыми краями */
+        .main-container {
+            background: rgba(255, 255, 255, 0.92);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(138, 43, 226, 0.08);
+            position: relative;
+        }
+        
+        /* Возрастной маркер 16+ */
+        .age-rating {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            border: 2px solid #8A2BE2;
+            color: #8A2BE2;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+        
+        /* Стили для главного фото-аватарки */
+        .avatar-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .main-avatar {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%; /* Делает фото круглым */
+            border: 4px solid #8A2BE2; /* Фиолетовый ободок */
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        /* Главный заголовок "Виктор Сергеевич" */
+        h1 { 
+            color: #4A154B; 
+            border-bottom: 2px solid #E6E6FA; /* Светло-фиолетовая линия */
+            padding-bottom: 10px; 
+            margin-top: 0;
+            text-align: center; /* Центрируем имя */
+        }
+        /* Подзаголовки */
+        h2 { 
+            color: #8A2BE2; 
+            margin-top: 30px; 
+        }
+        .intro { 
+            font-size: 1.2em; 
+            font-style: italic; 
+            color: #555; 
+            text-align: center; /* Центрируем подпись */
+        }
+        /* Маркеры списка */
+        ul { 
+            list-style-type: square; 
+            color: #8A2BE2; 
+        }
+        li {
+            color: #333;
+            margin-bottom: 8px;
+        }
+        
+        /* Стили для галереи фотографий внизу */
+        .gallery {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+        .gallery-item {
+            flex: 1;
+            min-width: 200px;
+            max-width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            border: 3px solid white;
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(1.02);
+        }
+
+        /* Стили для кнопок-ссылок в контактах */
+        .social-links {
+            margin-top: 15px;
+        }
+        .btn-link {
+            display: inline-block;
+            background-color: #8A2BE2;
+            color: white;
+            text-decoration: none;
+            padding: 10px 18px;
+            border-radius: 5px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .btn-link:hover {
+            background-color: #5D3FD3;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Оболочка для контента -->
+    <div class="main-container">
+        
+        <!-- Значок возрастного ограничения -->
+        <div class="age-rating">16+</div>
+
+        <!-- Главный заголовок -->
+        <h1>Виктор Сергеевич</h1>
+        <p class="intro">Музыкальный исполнитель | Поэт | Художник | Вокалист</p>
+
+        <!-- БЛОК С ГЛАВНЫМ ФОТО (В ОЧКАХ) -->
+        <div class="avatar-container">
+            <img src="main-photo.jpg" alt="Виктор Сергеевич - Главное фото" class="main-avatar">
+        </div>
+
+        <!-- Раздел о себе (Биография) -->
+        <h2>Обо мне</h2>
+        <p>Приветствую! Меня зовут Виктор Сергеевич, мне 18 лет. Я посвятил свою жизнь искусству и творчеству. Мой путь — это синергия музыки, слова и визуальных образов.</p>
+        <p>Свою первую музыку я начал писать еще в 13 лет, и с тех пор звук стал моим главным способом самовыражения и внутренней опорой. Мое детство было наполнено серьезными испытаниями: мне пришлось столкнуться с жестким домашним насилием и алкоголизмом в семье со стороны отца, который ушел из жизни 19 января 2026 года от сердечного приступа. Информация о моих родителях и семье остается закрытой и личной темой, детали которой я предпочитаю не раскрывать публично.</p>
+        <p>Сложное прошлое, частая смена школ и период учебы в ГКОУ РО «Николаевская специальная школа-интернат» во многом сформировали мой характер, научив стойкости. Сейчас я завершаю обучение в 11 классе и готовлюсь к новому этапу. Моя история — это фундамент моего творчества: я трансформирую пережитую боль в честные тексты, независимую музыку и картины, создавая свой собственный путь в искусстве.</p>
+
+        <!-- Направления творчества -->
+        <h2>Направления творчества</h2>
+        <ul>
+            <li><strong>Музыка и вокал:</strong> Исполняю музыкальные произведения и профессионально занимаюсь вокалом, вкладывая душу в каждый звук.</li>
+            <li><strong>Поэзия:</strong> Пишу стихи, в которых отражаю свои мысли, чувства и философию жизни.</li>
+            <li><strong>Живопись:</strong> Рисую картины, перенося на холст свои внутренние образы и вдохновение.</li>
+        </ul>
+
+        <!-- Раздел: Дополнительная галерея (Два фото) -->
+        <h2>Галерея</h2>
+        <div class="gallery">
+            <img src="photo2.jpg" alt="Виктор Сергеевич - фото в футболке" class="gallery-item">
+            <img src="знати.jpg" alt="Виктор Сергеевич - фото с заколкой" class="gallery-item">
+        </div>
+
+        <!-- Раздел контактов со ссылками -->
+        <h2>Контакты и Творчество</h2>
+        <p>Слушайте мои треки и следите за обновлениями на официальных страницах:</p>
+        
+        <div class="social-links">
+            <a href="https://soundcloud.com" target="_blank" class="btn-link">🎵 Слушать на SoundCloud</a>
+            <a href="https://tiktok.com" target="_blank" class="btn-link">📱 Мой TikTok (@energy_teek)</a>
+            <a href="#" target="_blank" class="btn-link">💽 Карточка музыканта</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
